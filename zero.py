@@ -1,0 +1,12 @@
+def steps_to_zero(n):
+    steps = 0
+        while n > 0:
+            if n % 2 == 0:
+                n = n // 2
+            else:
+                n = n - 1
+            steps += 1
+    return steps
+
+n = 14
+print (f"Number of steps to reduce {n} to zero: {steps_to_zero(n)}")
